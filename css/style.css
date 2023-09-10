@@ -1,0 +1,166 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar  */
+header {
+    display: flex;
+    align-items: center;
+    height: 6.1rem;
+    padding: .8rem 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 68rem;
+    max-width: 90%;
+    margin: 0 auto;
+    height: 4.5rem;
+}
+
+/* brand */
+nav a {
+    text-decoration: none;
+}
+
+nav .brand {
+    padding: 1rem 0;
+    margin-right: 2em;
+}
+
+nav .brand a{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    position: relative;
+    color: black;
+    letter-spacing: .08rem;
+}
+
+nav .brand a:hover{
+    cursor: pointer;
+}
+
+nav .brand a:active{
+    cursor: pointer;
+    color: black;
+}
+
+nav .brand a span{
+    font-size: 1.6rem;
+    color: white;
+    background-color: #3E64FF;
+    border-radius: 30px;
+    padding: 0.1rem 0.7rem;
+    position: relative;
+    left: 10.5px;
+    top: 0px;
+    z-index: -1;
+}
+
+/* menu toggler */
+nav .menu-toggler {
+    display: none;
+}
+
+
+/* menu links */
+nav .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    /* margin-left: 20px; */
+}
+
+nav .menu-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .menu-links li{
+    padding: .8rem 2rem;
+}
+
+nav .menu-links li a{
+    font-size: 1.06rem;
+    color: #1c1d1f;
+    position: relative;
+}
+
+nav .menu-links li a::before{
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    height: .14rem;
+    width: 100%;
+    background-color: #3E64FF;
+    border-radius: 3px;
+    transform: scaleX(0);
+    transition: transform .2s linear;
+
+}
+
+nav .menu-links li a:hover::before{
+    transform: scaleX(1);
+}
+
+
+@media (max-width: 991px) {
+    nav .menu-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        top: -100%;
+        left: 71px;
+        width: 85.7%;
+        height: 41.5%;
+        transition: 0.5s;
+    }
+    
+    nav .menu-links li{
+        padding: 1rem 0 1.3rem 1.3rem;
+    }
+
+    nav .menu-toggler {
+        display: flex;
+        justify-content: flex-end;
+        width: 81%;
+
+    }
+
+    nav .menu-btn {
+        display: flex; 
+        color: #808080;
+        cursor: pointer;
+        align-items: center;
+        padding: .3rem .7rem;
+    }
+    
+    nav .menu-btn span {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        margin-left: .3rem;
+    }
+
+    nav .active{
+        position: fixed;
+        top: 85px;
+    }
+
+    nav .menu-toggler:active{
+        cursor: pointer;
+        background-color: white;
+    }
+
+
+
+}
