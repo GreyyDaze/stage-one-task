@@ -10,6 +10,8 @@ menuBtn.addEventListener("click", () => {
 // close the menu on link clink
 const menuLink = document.querySelectorAll(".menu-links a");
 
-menuLink.addEventListener("click", () => {
-  menuLink.classList.remove("active");
+menuLink.forEach(link => {
+    link.addEventListener("click", () => {
+        menuLinks.classList.remove("active");
+    })  
 });
