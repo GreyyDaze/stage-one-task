@@ -49,8 +49,15 @@ setInterval(displayTimeAndDay, 1000);
 function addActiveClass(){
   const activeLink = document.activeElement;
 
+  menuLink.forEach(link => {
+    if(link.classList.contains('current-link')) {
+        link.classList.remove('current-link');
+    }
+  });
+
   if(activeLink && activeLink.tagName === 'A') {
       activeLink.classList.add('current-link');
+  
   }
 }
 
