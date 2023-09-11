@@ -22,7 +22,7 @@ header {
     top: 0;
     left: 0;
     transition: background-color 0.3s ease-in-out;
-    max-width: 100%;
+    width: 100%;
 }
 
 header.scrolled {
@@ -322,8 +322,9 @@ nav .menu-links li a.current-link{
         top: -100%;
         left: 71px;
         width: 85.7%;
-        height: 41.5%;
+        height: 55.9%;
         transition: 0.5s;
+        background-color: white;
     }
     
     nav .menu-links li{
