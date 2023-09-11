@@ -45,3 +45,13 @@ function displayTimeAndDay() {
 
 setInterval(displayTimeAndDay, 1000);
 
+// nav links on click
+function addActiveClass(){
+  const activeLink = document.activeElement;
+
+  if(activeLink && activeLink.tagName === 'A') {
+      activeLink.classList.add('current-link');
+  }
+}
+
+document.addEventListener('click', addActiveClass);

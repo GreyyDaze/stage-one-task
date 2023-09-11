@@ -125,6 +125,14 @@ nav .menu-links li a:hover::before{
     transform: scaleX(1);
 }
 
+nav .menu-links li a.current-link::before{
+    transform: scaleX(1);   
+}
+
+nav .menu-links li a.current-link{
+    color: #3E64FF;  
+}
+
 
 /* profile section */
 #profile {
@@ -282,7 +290,7 @@ nav .menu-links li a:hover::before{
     font-weight: 600;
     color: white;
     font-size: clamp(var(--font-size-min),  1.4vw, var(--font-size-max));
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 #github-link .github-img img {
