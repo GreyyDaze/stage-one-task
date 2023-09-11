@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,16 +11,18 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
     <title>Stage One Task</title>
 
-  </head>
-  <body>
-    
+</head>
+
+<body>
+
     <!-- navbar -->
     <header>
-        <nav>   
+        <nav>
             <div class="brand">
                 <a href="index.html">
                     <span>A</span>
@@ -30,37 +33,118 @@
             <div class="menu-toggler">
                 <div class="menu-btn">
                     <svg width="32" height="32" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#808080" d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"/>
+                        <path fill="#808080" d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z" />
                     </svg>
                     <span>Menu</span>
                 </div>
             </div>
-            
+
             <div class="nav-links">
                 <ul class="menu-links">
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Avatar</a></li>
-                    <li><a href="#">Time</a></li>
-                    <li><a href="#">GitHub</a></li>
-                    <li><a href="#">Copyright</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#slack-dp">Avatar</a></li>
+                    <li><a href="#current-info">Time</a></li>
+                    <li><a href="#github-link">GitHub</a></li>
+                    <li><a href="#footer">Copyright</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- <main>
+    <main>
         <section id="profile">
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, nostrum laboriosam dolorum nesciunt ab cumque harum fugit minus rem, aliquid dicta eaque amet veniam autem libero atque voluptatem voluptates sed?</h1>
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, nostrum laboriosam dolorum nesciunt ab cumque harum fugit minus rem, aliquid dicta eaque amet veniam autem libero atque voluptatem voluptates sed?</h1>
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, nostrum laboriosam dolorum nesciunt ab cumque harum fugit minus rem, aliquid dicta eaque amet veniam autem libero atque voluptatem voluptates sed?</h1>
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, nostrum laboriosam dolorum nesciunt ab cumque harum fugit minus rem, aliquid dicta eaque amet veniam autem libero atque voluptatem voluptates sed?</h1>
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, nostrum laboriosam dolorum nesciunt ab cumque harum fugit minus rem, aliquid dicta eaque amet veniam autem libero atque voluptatem voluptates sed?</h1>
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, nostrum laboriosam dolorum nesciunt ab cumque harum fugit minus rem, aliquid dicta eaque amet veniam autem libero atque voluptatem voluptates sed?</h1>
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, nostrum laboriosam dolorum nesciunt ab cumque harum fugit minus rem, aliquid dicta eaque amet veniam autem libero atque voluptatem voluptates sed?</h1>
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, nostrum laboriosam dolorum nesciunt ab cumque harum fugit minus rem, aliquid dicta eaque amet veniam autem libero atque voluptatem voluptates sed?</h1>
+            <div class="overlay"></div>
+            <div class="profile-text">
+                <h3>Hi! I am</h3>
+                <h1 data-testid="slackUserName">Aminah</h1>
+                <p>I'm part of <span data-testid="myTrack">Frontend </span>track.</p>
+            </div>
         </section>
-    </main> -->
 
+        <section id="slack-dp">
+            <div class="image">
+                <img src="img/slack-dp.jpg" alt="Aminah" data-testid="slackDisplayImage">
+            </div>   
+
+            <div>
+                <svg width="64" height="64" viewBox="0 0 16 9" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#3E64FF" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5Z" />
+                    <path fill="#3E64FF" d="M6 8.5a.47.47 0 0 1-.35-.15l-3.5-3.5c-.2-.2-.2-.51 0-.71L5.65.65c.2-.2.51-.2.71 0c.2.2.2.51 0 .71L3.21 4.51l3.15 3.15c.2.2.2.51 0 .71c-.1.1-.23.15-.35.15Z" />
+                </svg>
+            </div>
+
+            <div class="section-text">
+                 <h2>Find me by this pic</h2>
+            </div>
+        </section>
+
+        <section id="current-info">
+            <div class="time-info">
+                <svg width="128" height="128" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" class="h-full w-full" id="iconWithBackground">
+                    <rect id="r4" width="512" height="512" x="0" y="0" rx="35" fill="white" stroke="#000000"
+                        stroke-width="0" stroke-opacity="100%" paint-order="stroke"></rect>
+                    <defs>
+                        <linearGradient id="linearGradient" gradientUnits="userSpaceOnUse"
+                            gradientTransform="rotate(0)" style="transform-origin: center center;">
+                            <stop stop-color="#8e2de2"></stop>
+                            <stop offset="1" stop-color="#4a00e0"></stop>
+                        </linearGradient>
+                        <radialGradient id="glare" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            gradientTransform="translate(256) rotate(90) scale(512)">
+                            <stop stop-color="white"></stop>
+                            <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                        </radialGradient>
+                        <clipPath id="clip">
+                            <use xlink:href="#r4"></use>
+                        </clipPath>
+                    </defs><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true" role="img" x="128" y="128" class="iconify iconify--svg-spinners"
+                        width="256" height="256" viewBox="0 0 24 24" style="color: rgb(62, 100, 255);">
+                        <path fill="currentColor"
+                            d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z">
+                        </path>
+                        <rect width="2" height="7" x="11" y="6" fill="currentColor" rx="1">
+                            <animateTransform attributeName="transform" dur="9s" repeatCount="indefinite"
+                                type="rotate" values="0 12 12;360 12 12"></animateTransform>
+                        </rect>
+                        <rect width="2" height="9" x="11" y="11" fill="currentColor" rx="1">
+                            <animateTransform attributeName="transform" dur="0.75s" repeatCount="indefinite"
+                                type="rotate" values="0 12 12;360 12 12"></animateTransform>
+                        </rect>
+                    </svg>
+                </svg>
+                <h2 id="current-time" data-testid="currentUTCTime"></h2>
+            </div>
+
+            <div class="day-info">
+                <svg width="128" height="128" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#3b82f6" d="m960 95.888l-256.224.001V32.113c0-17.68-14.32-32-32-32s-32 14.32-32 32v63.76h-256v-63.76c0-17.68-14.32-32-32-32s-32 14.32-32 32v63.76H64c-35.344 0-64 28.656-64 64v800c0 35.343 28.656 64 64 64h896c35.344 0 64-28.657 64-64v-800c0-35.329-28.656-63.985-64-63.985zm0 863.985H64v-800h255.776v32.24c0 17.679 14.32 32 32 32s32-14.321 32-32v-32.224h256v32.24c0 17.68 14.32 32 32 32s32-14.32 32-32v-32.24H960v799.984zM736 511.888h64c17.664 0 32-14.336 32-32v-64c0-17.664-14.336-32-32-32h-64c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32zm0 255.984h64c17.664 0 32-14.32 32-32v-64c0-17.664-14.336-32-32-32h-64c-17.664 0-32 14.336-32 32v64c0 17.696 14.336 32 32 32zm-192-128h-64c-17.664 0-32 14.336-32 32v64c0 17.68 14.336 32 32 32h64c17.664 0 32-14.32 32-32v-64c0-17.648-14.336-32-32-32zm0-255.984h-64c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32h64c17.664 0 32-14.336 32-32v-64c0-17.68-14.336-32-32-32zm-256 0h-64c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32h64c17.664 0 32-14.336 32-32v-64c0-17.68-14.336-32-32-32zm0 255.984h-64c-17.664 0-32 14.336-32 32v64c0 17.68 14.336 32 32 32h64c17.664 0 32-14.32 32-32v-64c0-17.648-14.336-32-32-32z" />
+                </svg>
+                <h2 id="current-day"  data-testid="currentDayOfTheWeek"></h2>
+            </div>
+        </section>
+
+        <section id="github-link">
+            <div class="text">
+                <h2>Check out the source code for this webpage</h2>
+                <button>
+                    <a href="#" data-testid=“githubURL" >Github Link</a>
+                </button>      
+            </div>
+            <div class="github-img">
+                <img src="img/github-logo.png" alt="github logo">
+            </div>
+
+        </section>
+
+        <section id="footer">
+            <div>
+                <h2>&copy; 2023 Aminah. All rights reserved</h2>
+            </div>
+
+        </section>
+
+    </main>
     <script src="js/script.js"></script>
-  </body>
-</html>
+</body>
